@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import { FaCode } from "react-icons/fa6";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Updated links to match your new combined sections
   const navLinks = [
-    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Education", href: "#education" },
     { name: "Projects", href: "#projects" },
@@ -13,11 +14,11 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-gray-900/60 backdrop-blur-md text-gray-200 p-4 fixed top-0 w-full shadow-lg z-50">
+    <nav className="h-20 flex items-center bg-gray-900/60 backdrop-blur-md text-gray-200 p-4 fixed top-0 w-full shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo/Name */}
-        <div className="text-xl font-bold tracking-wide text-blue-400">
-          Sandun Theekshana
+        <div className="flex text-2xl gap-[20px] font-bold tracking-wide text-blue-400">
+          <FaCode size={30} className=""/> Sandun Theekshana
         </div>
 
         {/* Desktop Navigation */}
@@ -26,7 +27,7 @@ export default function Navbar() {
             <li key={link.name}>
               <a 
                 href={link.href} 
-                className="hover:text-blue-400 transition-colors duration-300 ease-in-out border-b-2 border-transparent hover:border-blue-400 pb-1"
+                className="text-[20px] hover:text-blue-400 transition-colors duration-300 ease-in-out border-b-2 border-transparent hover:border-blue-400 pb-1"
               >
                 {link.name}
               </a>
@@ -60,3 +61,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

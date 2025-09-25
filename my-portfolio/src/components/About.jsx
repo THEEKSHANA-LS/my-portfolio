@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 export default function Home() {
   return (
     <section
-      id="home"
+      id="about"
       className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-950 text-gray-300 px-6 py-20"
     >
       {/* Left Side: Text Content */}
@@ -44,17 +44,19 @@ export default function Home() {
           
           {/* Action Buttons Section */}
           <div className="flex flex-col md:flex-row gap-4 mt-8 justify-center md:justify-start">
-            {/* Resume Buttons */}
-            <a 
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-700 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-600 transition-colors duration-300"
+            <a
+              href="#projects"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
             >
-              View Resume
+              View My Work
             </a>
+            
+            {/* Resume Buttons */}
+            
             <a 
               href="/resume.pdf" 
+              target="_blank"
+              rel="noopener noreferrer"
               download 
               className="bg-emerald-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300"
             >
