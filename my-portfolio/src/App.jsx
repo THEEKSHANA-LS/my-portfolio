@@ -1,14 +1,16 @@
-import Navbar from "./components/Navbar.jsx";
-import About from "./components/About.jsx";
-import Skills from "./components/Skills.jsx";
-import Education from "./components/Education.jsx";
-import Projects from "./components/Projects.jsx";
-import Contact from "./components/Contact.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./pages/Navbar.jsx";
+import About from "./pages/About.jsx";
+import Skills from "./pages/Skills.jsx";
+import Education from "./pages/Education.jsx";
+import Projects from "./pages/Projects.jsx";
+import Contact from "./pages/Contact.jsx";
+import Footer from "./pages/Footer.jsx";
+import { Toaster } from "react-hot-toast";
 
 export default function App() {
   return (
     <div className="font-sans">
+      <Toaster position="top-right"/>
       <Navbar />
       <About />
       <Skills />

@@ -7,8 +7,22 @@ export default function Home() {
       id="about"
       className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-950 text-gray-300 px-6 py-20"
     >
-      {/* Left Side: Text Content */}
-      <div className="text-center md:text-left md:w-1/2 md:pr-12 mb-10 md:mb-0">
+      {/* ✅ Profile Image (Mobile: Top + Center, Desktop: Right) */}
+      <motion.div
+        className="flex justify-center mb-10 md:mb-0 md:w-1/3 md:order-2"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <img
+          src="/profile.jpeg"
+          alt="Sandun Theekshana"
+          className="w-56 h-56 md:w-80 md:h-80 mt-2 rounded-full shadow-2xl border-4 border-blue-600 object-cover"
+        />
+      </motion.div>
+
+      {/* Text Section */}
+      <div className="text-center md:text-left md:w-1/2 md:pr-12">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -21,8 +35,7 @@ export default function Home() {
             <ReactTyped
               strings={[
                 "Web Developer 💻",
-                "Student 🎓",
-                "Tech Enthusiast 🚀",
+                "Undergraduate Student 🎓",
                 "UI/UX Learner 🎨",
               ]}
               typeSpeed={60}
@@ -32,7 +45,7 @@ export default function Home() {
           </p>
         </motion.div>
 
-        {/* About Section Text */}
+        {/* About Text */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,8 +54,8 @@ export default function Home() {
           <p className="text-lg leading-relaxed text-gray-400">
             I'm a Software Technology Undergraduate student at the Faculty Of Technology University of Sri Jayewardenepura, passionate about web development in MERN Stack, UI/UX design, and building user-friendly web applications. I enjoy learning new technologies and applying them to real-world projects.
           </p>
-          
-          {/* Action Buttons Section */}
+
+          {/* Action Buttons */}
           <div className="flex flex-col md:flex-row gap-4 mt-8 justify-center md:justify-start">
             <a
               href="#projects"
@@ -50,14 +63,11 @@ export default function Home() {
             >
               View My Work
             </a>
-            
-            {/* Resume Buttons */}
-            
-            <a 
-              href="/resume.pdf" 
+            <a
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download 
+              download
               className="bg-emerald-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300"
             >
               Download Resume
@@ -65,20 +75,6 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-
-      {/* Right Side: Profile Photo */}
-      <motion.div
-        className="md:w-1/3 flex justify-center md:justify-end"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        <img
-          src="/profile.jpeg"
-          alt="Sandun Theekshana"
-          className="w-56 h-56 md:w-80 md:h-80 rounded-full shadow-2xl border-4 border-blue-600 object-cover"
-        />
-      </motion.div>
     </section>
   );
 }

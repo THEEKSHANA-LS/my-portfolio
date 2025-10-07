@@ -14,15 +14,23 @@ export default function Projects() {
       desc: "A full-stack web application built with React and Node.js, enabling real-time messaging and user authentication.",
       imageUrl: "ChatNest.png", // Path to your project image
       tech: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
-      link: "#",
+      link: "https://github.com/THEEKSHANA-LS/ChatNest-MERN-Stack-chat-application.git",
     },
     {
-      title: "Movie Recommendation App",
-      desc: "A React-based web application that provides movie recommendations based on user preferences and popular trends.",
-      imageUrl: "/images/movie-app.png", // Path to your project image
-      tech: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      link: "#",
+      title: "MERN auth web app",
+      desc: "A React-based web application that provides user login, sign-up, JWT authentication, User Verification via OTP, Password Reset via OTP",
+      imageUrl: "MERNauth.png", // Path to your project image
+      tech: ["React JS", "API", "HTML", "CSS", "JavaScript", "NodeMailer", "Brevo", "MongoDB", "Express", "Node.js"],
+      link: "https://github.com/THEEKSHANA-LS/mern-auth-system.git",
     },
+    {
+      title: "Personal Portfolio Website",
+      desc: "A React-based single page web site develop using react, tailwind and framer motion, toast, EmailJs.",
+      imageUrl: "portfolio.png", // Path to your project image
+      tech: ["React JS", "HTML", "CSS", "JavaScript", "EmailJs"],
+      link: "https://github.com/THEEKSHANA-LS/my-portfolio.git",
+    },
+    
     // Add more projects here following the same structure
     // {
     //   title: "Your Project Title",
