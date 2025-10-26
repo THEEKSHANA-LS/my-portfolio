@@ -15,7 +15,7 @@ export default function Home() {
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <img
-          src="/profile.jpeg"
+          src="/profile.png"
           alt="Sandun Theekshana"
           className="w-56 h-56 md:w-80 md:h-80 mt-2 rounded-full shadow-2xl border-4 border-blue-600 object-cover"
         />

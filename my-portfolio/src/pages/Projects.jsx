@@ -10,6 +10,13 @@ export default function Projects() {
       link: "#",
     },
     {
+      title: "IntelliPrep (AI-Powered Interview Preparation Platform)",
+      desc: "A React-based web application that leverages AI to help users prepare for interviews with personalized questions and feedback.",
+      imageUrl: "IntelliPrep.png", // Path to your project image
+      tech: ["React JS", "Express.js", "TailwindCSS", "JavaScript", "Node.js", "MongoDB"],
+      link: "https://github.com/THEEKSHANA-LS/intelli-prep.git",
+    },
+    {
       title: "ChatNest (Real-time Chat Application)",
       desc: "A full-stack web application built with React and Node.js, enabling real-time messaging and user authentication.",
       imageUrl: "ChatNest.png", // Path to your project image
