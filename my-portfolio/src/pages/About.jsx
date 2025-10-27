@@ -64,7 +64,7 @@ export default function Home() {
               View My Work
             </a>
             <a
-              href="/resume.pdf"
+              href="/cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
