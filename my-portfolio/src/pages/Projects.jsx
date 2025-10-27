@@ -5,28 +5,28 @@ export default function Projects() {
     {
       title: "InternLink (Internship Management System)",
       desc: "A powerful and user-friendly React.js application that streamlines internship management for students and administrators.",
-      imageUrl: "InternLink.png", // Path to your project image
+      imageUrl: "internLink.png", // Path to your project image
       tech: ["HTML", "CSS", "JavaScript", "React JS", "Firebase API"],
       link: "#",
     },
     {
       title: "IntelliPrep (AI-Powered Interview Preparation Platform)",
       desc: "A React-based web application that leverages AI to help users prepare for interviews with personalized questions and feedback.",
-      imageUrl: "IntelliPrep.png", // Path to your project image
+      imageUrl: "intelliPrep.png", // Path to your project image
       tech: ["React JS", "Express.js", "TailwindCSS", "JavaScript", "Node.js", "MongoDB"],
       link: "https://github.com/THEEKSHANA-LS/intelli-prep.git",
     },
     {
       title: "ChatNest (Real-time Chat Application)",
       desc: "A full-stack web application built with React and Node.js, enabling real-time messaging and user authentication.",
-      imageUrl: "ChatNest.png", // Path to your project image
+      imageUrl: "chatNest.png", // Path to your project image
       tech: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
       link: "https://github.com/THEEKSHANA-LS/ChatNest-MERN-Stack-chat-application.git",
     },
     {
       title: "MERN auth web app",
       desc: "A React-based web application that provides user login, sign-up, JWT authentication, User Verification via OTP, Password Reset via OTP",
-      imageUrl: "MERNauth.png", // Path to your project image
+      imageUrl: "mernAuth.png", // Path to your project image
       tech: ["React JS", "API", "HTML", "CSS", "JavaScript", "NodeMailer", "Brevo", "MongoDB", "Express", "Node.js"],
       link: "https://github.com/THEEKSHANA-LS/mern-auth-system.git",
     },
