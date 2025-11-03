@@ -7,6 +7,7 @@ export default function Contact() {
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
 
+  // ... (handleSubmit function remains the same)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,50 +40,46 @@ export default function Contact() {
         Contact Me
       </h2>
 
-      <div className="max-w-xl mx-auto px-6">
+      {/* Increased max-width slightly for desktop, improved mobile padding */}
+      <div className="max-w-2xl mx-auto px-4 sm:px-6"> 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-700"
+          className="bg-gray-800 rounded-3xl p-6 sm:p-12 shadow-2xl border border-gray-700"
         >
-          <h3 className="text-xl font-bold text-center mb-6 text-gray-100">
-            Send Me an Email 📧
+          <h3 className="text-xl font-bold text-center mb-8 text-gray-100">
+            Send Me a Message 📬
           </h3>
 
           <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
-            <input
-              type="email"
-              name="from_email"
-              placeholder="Your Email"
-              className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-200 placeholder-gray-400 transition-all duration-300"
-              required
-            />
-            <input
-              type="text"
-              name="from_name"
-              placeholder="Your Name"
-              className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-200 placeholder-gray-400 transition-all duration-300"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-200 placeholder-gray-400 transition-all duration-300"
-              required
-            />
+            {[
+              { type: "email", name: "from_email", placeholder: "Your Email" },
+              { type: "text", name: "from_name", placeholder: "Your Name" },
+              { type: "text", name: "subject", placeholder: "Subject" }
+            ].map((inputProps) => (
+              <input
+                key={inputProps.name}
+                type={inputProps.type}
+                name={inputProps.name}
+                placeholder={inputProps.placeholder}
+                // Unified input styling with better focus/hover
+                className="w-full p-4 rounded-xl bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none text-gray-200 placeholder-gray-400 transition-all duration-300 shadow-inner"
+                required
+              />
+            ))}
             <textarea
               name="message"
-              rows="5"
+              rows="6" // Increased rows for better writing space on desktop
               placeholder="Message"
-              className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-200 placeholder-gray-400 resize-y transition-all duration-300"
+              // Unified input styling with better focus/hover
+              className="w-full p-4 rounded-xl bg-gray-700 border border-gray-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none text-gray-200 placeholder-gray-400 resize-y transition-all duration-300 shadow-inner"
               required
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-500 to-gray-900 text-white font-semibold py-3 rounded-lg shadow-lg hover:from-gray-700 hover:to-blue-700 transition-all duration-300"
+              className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold py-4 rounded-xl shadow-xl hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={loading}
             >
               {loading ? "Sending..." : "Send Message"}
