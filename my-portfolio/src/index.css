@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ADD THESE LINES */
+@layer base {
+  body {
+    /* Sets the default background for the entire page to a deep dark gray */
+    @apply bg-gray-950; 
+  }
+}

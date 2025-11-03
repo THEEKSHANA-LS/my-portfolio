@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 
 export default function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-gray-950 min-h-screen">
       <Toaster position="top-right"/>
       <Navbar />
       <About />
