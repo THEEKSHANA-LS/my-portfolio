@@ -3,14 +3,14 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"; // Added icons for
 
 export default function Projects() {
   const projects = [
-    {
+/*{
       title: "InternLink (Internship Management System)",
       desc: "A powerful and user-friendly React.js application that streamlines internship management for students and administrators.",
       imageUrl: "internLink.png", 
       tech: ["HTML", "CSS", "JavaScript", "React JS", "Firebase API"],
       link: "#", // Assuming this is a live demo link or a project page link
       github: "https://github.com/THEEKSHANA-LS/InternLink.git" // Added explicit GitHub link if available
-    },
+    },*/
     {
       title: "IntelliPrep (AI-Powered Interview Preparation Platform)",
       desc: "A React-based web application that leverages AI to help users prepare for interviews with personalized questions and feedback.",
@@ -19,14 +19,14 @@ export default function Projects() {
       link: "https://intelliprep.app", // Placeholder for live link
       github: "https://github.com/THEEKSHANA-LS/intelli-prep.git",
     },
-    {
+    /*{
       title: "ChatNest (Real-time Chat Application)",
       desc: "A full-stack web application built with React and Node.js, enabling real-time messaging and user authentication.",
       imageUrl: "chatNest.png", 
       tech: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
       link: "#",
       github: "https://github.com/THEEKSHANA-LS/ChatNest-MERN-Stack-chat-application.git",
-    },
+    },*/
     {
       title: "MERN Auth Web App",
       desc: "A React-based web application that provides user login, sign-up, JWT authentication, User Verification via OTP, and Password Reset via OTP.",
