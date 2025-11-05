@@ -68,7 +68,7 @@ export default function Home() {
               View My Work
             </a>
             <a
-              href="/Sandun_Theekshana_ATS_Resume"
+              href="/Sandun_Theekshana_ATS_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
