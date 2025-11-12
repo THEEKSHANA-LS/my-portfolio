@@ -12,6 +12,14 @@ export default function Projects() {
       github: "https://github.com/THEEKSHANA-LS/InternLink.git" // Added explicit GitHub link if available
     },*/
     {
+      title: "Casual Club (E-commerce Platform for Casual Wear)",
+      desc: "A React-based web application that offers a seamless shopping experience for casual wear enthusiasts, featuring product browsing, cart management, and secure checkout.",
+      imageUrl: "casualClub.png", 
+      tech: ["React JS", "Express.js", "TailwindCSS", "JavaScript", "Node.js", "MongoDB", "NodeMailer"],
+      link: "https://intelliprep.app", // Placeholder for live link
+      github: "https://github.com/THEEKSHANA-LS/cbc-backend.git",
+    },
+    {
       title: "IntelliPrep (AI-Powered Interview Preparation Platform)",
       desc: "A React-based web application that leverages AI to help users prepare for interviews with personalized questions and feedback.",
       imageUrl: "intelliPrep.png", 
